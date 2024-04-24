@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Google with Java</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+     
+    }
+
+    #myform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      width: 600px;
+      border: 1px solid black;
+      border-radius: 5%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+      
+    .btn:hover {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      border-radius: 3%;
+      transform: scale(0.9);
+      transition: 1s;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png" />
+    <form id="myform" action="GoogleSearch" method="post">
+      <input type="text" placeholder="Search Here" name="search">
+      
+      <button type="submit" class="btn btn-primary"><i class="fas fa-search">Google Search</i></button>
+      
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
