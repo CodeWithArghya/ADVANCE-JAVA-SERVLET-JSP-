@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>userController</servlet-name>
+  	<display-name>userController</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.login.userController.userController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>userSignup</servlet-name>
+  	<display-name>userSignup</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.signup.userController.userSignup</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addTodo</servlet-name>
+  	<display-name>addTodo</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Main.addtodoController.addTodo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>updateTodo</servlet-name>
+  	<display-name>updateTodo</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Main.EditTodoController.updateTodo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>changepassword</servlet-name>
+  	<display-name>changepassword</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.login.ChangePasswordController.changepassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>searchTodo</servlet-name>
+  	<display-name>searchTodo</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.Main.searchTodo.searchTodo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>feedback</servlet-name>
+  	<display-name>feedback</display-name>
+  	<description></description>
+  	<servlet-class>com.todo.review.Feedback.feedback</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userController</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>userSignup</servlet-name>
+  	<url-pattern>/userSignup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addTodo</servlet-name>
+  	<url-pattern>/addTodo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateTodo</servlet-name>
+  	<url-pattern>/updateTodo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>changepassword</servlet-name>
+  	<url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>searchTodo</servlet-name>
+  	<url-pattern>/searchTodo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>feedback</servlet-name>
+  	<url-pattern>/feedback</url-pattern>
+  </servlet-mapping>
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error_404.jsp</location>
+  </error-page>
+  
+  
+  
+  
+
+</web-app>
